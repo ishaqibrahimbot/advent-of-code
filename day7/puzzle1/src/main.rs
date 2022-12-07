@@ -73,12 +73,9 @@ fn process_command(command: Command, path: String, mut list: Vec<File>) -> (Stri
     if command.command_type == Some(CommandType::cd) {
         if command.value == Some("..".to_string()) {
             let mut directories: Vec<String> = path.split("/").map(|x| String::from(x)).collect();
-            println!("Directories before: {:?}", directories);
             directories.pop();
             directories.pop();
-            println!("Directories after pop: {:?}", directories);
             let new_path = if directories.len() > 1 { directories.push("".to_string()); directories.join("/") } else { "/".to_string() };
-            println!("New path: {}", new_path);
             (new_path, list)
         } else {
             let name_of_dir = command.value.unwrap();
