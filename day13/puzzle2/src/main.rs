@@ -8,9 +8,6 @@ fn get_nested_array(chars: Vec<char>, mut index: u32) -> (Value, u32) {
 
     let mut this_vec: Vec<Value> = vec![];
 
-    // only push when you encounter a comma
-    // until then add characters onto a single str
-
     let mut digit_str = String::new();
     loop {
         let char = chars.clone().into_iter().nth(index as usize);
