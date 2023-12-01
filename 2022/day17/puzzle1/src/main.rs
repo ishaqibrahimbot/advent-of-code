@@ -191,7 +191,7 @@ impl Map {
 }
 
 fn main() {
-    let path = "./sample.txt";
+    let path = "./input.txt";
     let contents = fs::read_to_string(path).expect("FAILURE");
 
     let mut directions: VecDeque<Direction> = VecDeque::new();
