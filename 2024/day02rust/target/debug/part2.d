@@ -1,0 +1,1 @@
+/Users/ishaq.ibrahim/ishaq-stuff/advent-of-code/2024/day02rust/target/debug/part2: /Users/ishaq.ibrahim/ishaq-stuff/advent-of-code/2024/day02rust/src/bin/input.txt /Users/ishaq.ibrahim/ishaq-stuff/advent-of-code/2024/day02rust/src/bin/part2.rs
